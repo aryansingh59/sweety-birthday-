@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday Saloni 💗</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sky"></canvas><canvas id="fx"></canvas>
+
+<div id="intro">
+  <p>Saloni… meri Sweety,<br>ek chhota sa surprise sirf tumhare liye…</p>
+  <button class="bigheart" id="open" aria-label="Surprise kholo">💗</button>
+  <span style="color:var(--lilac)">Is dil ko tap karo</span>
+</div>
+
+<button id="music" aria-label="Music on/off">🎵 Music</button>
+<audio id="song" loop src="music.mp3"></audio>
+<audio id="voice" preload="none"></audio>
+
+<main>
+<section id="hero">
+  <div class="pre" id="typed"></div>
+  <h1>Happy Birthday,<br>Saloni</h1>
+  <div class="date">2 NOVEMBER</div>
+  <div class="date" style="font-family:var(--serif);font-style:italic;letter-spacing:0;font-size:1.25rem;color:var(--lilac)">Lucknow ki Saloni, meri Sweety 💗 Mumbai ka Aryan</div>
+  <div class="scroll">neeche scroll karo ↓</div>
+</section>
+
+<section>
+  <h2>Tumhare naam ek chitthi</h2>
+  <p class="sub">Dil se likhi hai, padhna zaroor</p>
+  <div class="letter">
+    <p>Meri Saloni, meri Sweety,</p>
+    <p>Duniya ke liye tum Saloni ho, par mere liye meri pyaari si Sweety.</p>
+    <p>Aaj ka din sirf ek date nahi hai, ye woh din hai jab duniya ko tum jaisi pyaari insaan mili. Tumhari ek muskaan se mera poora din ban jaata hai, aur tumhari awaaz sunkar saari thakaan gayab ho jaati hai.</p>
+    <p>Hum dono ke beech Mumbai aur Lucknow ka faasla hai, hamari mulaqaat screen par hoti hai, phir bhi tum mere itne paas ho ki lagta hai har pal saath hain. Mere liye ye pyaar online nahi, mere dil ka sabse sachcha hissa hai. Meri jaan se bhi zyada, tum mujhe pyaari ho.</p>
+    <p>Telegram ke ek group se shuru hui ye kahani mujhe aaj bhi yaad hai. Jis din maine himmat karke tumhe message kiya tha, us din ke baad se tumse baat karna meri sabse pyaari aadat ban gayi. Main aaj bhi roz koshish karta hoon ki tumhe khush kar sakoon, aur tumhara thoda sa bhi pyaar mere liye poori duniya jitna hai.</p>
+    <p>Tum hamesha aise hi hansti raho, chamakti raho, aur tumhare saare sapne poore ho. Aur un sapnon ke raaste mein, main tumhare saath chalna chahta hoon, har kadam par.</p>
+    <p class="sign">Hamesha tumhara,<br>Aryan 💗</p>
+  </div>
+</section>
+
+<section>
+  <h2>Beech mein itne sheher, phir bhi dil paas</h2>
+  <p class="sub">Lucknow ki Saloni, Mumbai ka Aryan</p>
+  <svg class="map" viewBox="0 0 400 300" aria-label="Mumbai se Lucknow ka rasta">
+    <path id="rt" class="route" d="M70 235 Q95 95 260 72"/>
+    <circle class="pin" cx="70" cy="235" r="7"/><circle class="pin" cx="260" cy="72" r="9" fill="#ff8fb1"/><circle class="pin" cx="345" cy="125" r="5"/>
+    <text class="lab" x="82" y="262">Mumbai</text><text class="lab2" x="82" y="278">samandar aur meri raatein</text>
+    <text class="lab" x="200" y="50">Lucknow</text><text class="lab2" x="190" y="35">meri Saloni ka sheher</text>
+    <text class="lab" x="300" y="152">Varanasi</text><text class="lab2" x="298" y="168">mera gaon</text>
+    <g><text font-size="22" text-anchor="middle" dy="6">💗</text><animateMotion dur="6s" repeatCount="indefinite"><mpath href="#rt"/></animateMotion></g>
+  </svg>
+  <div class="km">~<span id="km">0</span> km</div>
+  <p class="kmsub">Itni doori, phir bhi har din tumhari yaad mere sabse paas rehti hai.</p>
+</section>
+
+<section>
+  <h2>Hamari love story</h2>
+  <p class="sub">Telegram ke ek group se shuru hui hamari kahani</p>
+  <div class="tl" id="tl"></div>
+</section>
+
+<section>
+  <h2>Wo pehla message…</h2>
+  <p class="sub">Jaisa mujhe yaad hai, hamari kahani ke shuruaati pal</p>
+  <div class="tg"><div class="tgh"><i>A</i><div><b>Aryan</b><small>online</small></div></div><div class="tgb" id="tgb" aria-live="polite"></div></div>
+  <button id="tgre" style="margin-top:22px">↻ Dobara dekho</button>
+</section>
+
+<section>
+  <h2>Ek tara tumhare naam</h2>
+  <p class="sub">Taaron ko chhuo, har ek mein ek yaad chhupi hai ✨</p>
+  <div class="cst"><svg id="cst" viewBox="0 0 300 290" role="group" aria-label="Saloni naam ka tara aur uski constellation"></svg></div>
+  <div class="gt ci show" id="ci" aria-live="polite"><h3>Saloni</h3><p>Sabse chamakta tara tumhara hai. Pehle usse chhuo ✨</p></div>
+</section>
+
+<section>
+  <h2>Hamari yaadein</h2>
+  <p class="sub">Har photo ke peeche ek pyaari si kahani hai</p>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section>
+  <h2>Tumhe pyaar karne ki wajah</h2>
+  <p class="sub">Har dil ko tap karo</p>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section id="wsec">
+  <h2>100 wajah</h2>
+  <p class="sub">Scroll karte jao, ek ek karke khulti jayengi</p>
+  <div class="wprog"><span id="wn">0</span> / 100<div class="wbar"><i id="wbar"></i></div></div>
+  <ol class="wl" id="wl"></ol>
+</section>
+
+<section>
+  <h2>Mere vachan</h2>
+  <p class="sub">Ye wade hain, jo main tumse nibhaunga</p>
+  <ul class="prom" id="prom"></ul>
+</section>
+
+<section>
+  <h2>Ek chhota sa voice sandesh</h2>
+  <p class="sub">Headphones laga lo aur play dabao 🎧</p>
+  <div class="vc" id="vc"><button id="vplay" aria-label="Voice sandesh chalao">▶</button><div class="wave" id="wave"></div></div>
+  <div class="vt" id="vt">0:00</div>
+</section>
+
+<section>
+  <h2>Aap ke naam</h2>
+  <p class="sub">Lucknow ki tehzeeb se bhare chand alfaaz</p>
+  <div class="shay" id="shay"></div>
+</section>
+
+<section>
+  <h2>Tumhare liye 3 tohfe</h2>
+  <p class="sub">Har dibba kholo 🎁</p>
+  <div class="gifts" id="gifts"></div>
+  <div class="gt" id="gt" aria-live="polite"></div>
+</section>
+
+<section>
+  <h2>Jab bhi zaroorat ho…</h2>
+  <p class="sub">Main paas nahi hota, toh ye chitthiyan tumhare paas hain. Kholo toh sahi</p>
+  <div id="env"></div>
+</section>
+
+<section>
+  <h2>Ek wish maango</h2>
+  <p class="sub">Aankhein band karo, dil se kuch maango, phir candles bujhao</p>
+  <svg class="cake" id="cake" viewBox="0 0 300 260" aria-label="Birthday cake">
+    <g class="candles">
+      <rect x="95" y="70" width="10" height="45" rx="3" fill="#c9b6ff"/><rect x="145" y="55" width="10" height="60" rx="3" fill="#ffd1e0"/><rect x="195" y="70" width="10" height="45" rx="3" fill="#c9b6ff"/>
+      <ellipse class="flame" cx="100" cy="56" rx="7" ry="13" fill="#f6d58e"/><ellipse class="flame" cx="150" cy="41" rx="7" ry="13" fill="#f6d58e" style="animation-delay:.15s"/><ellipse class="flame" cx="200" cy="56" rx="7" ry="13" fill="#f6d58e" style="animation-delay:.3s"/>
+    </g>
+    <rect x="50" y="110" width="200" height="60" rx="14" fill="#ff8fb1"/>
+    <path d="M50 128q16 22 33 0t33 0 33 0 33 0 33 0 22 0v-6a14 14 0 0 0-14-12H64a14 14 0 0 0-14 12z" fill="#fff0f5"/>
+    <rect x="30" y="170" width="240" height="70" rx="16" fill="#c58bff"/>
+    <path d="M30 190q20 24 40 0t40 0 40 0 40 0 40 0 30 0v-6a16 16 0 0 0-16-14H46a16 16 0 0 0-16 14z" fill="#fff0f5"/>
+    <text x="150" y="228" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-size="22" fill="#fff">Saloni 💗</text>
+  </svg>
+  <button id="blow">Candles bujhao 🕯️</button>
+  <div id="wishmsg"></div>
+</section>
+
+<section>
+  <h2>Ek chhota sa surprise coupon</h2>
+  <p class="sub">Ungli se scratch karo ✨</p>
+  <div class="scr" id="scr"><div class="under"><b>🎟️ Ek Jaadu Ki Jhappi</b><span>Valid: hamesha ke liye<br>Kab chahiye? Bas ek message door hoon 💗</span></div><canvas id="swipe"></canvas></div>
+</section>
+
+<section>
+  <h2>Ek aakhri baat…</h2>
+  <p class="sub">Isse bachake rakha tha</p>
+  <button id="last">Ye kholo 💌</button>
+  <div id="secret">
+    <h3>I love you,<br>Saloni</h3>
+    <p>Aaj, kal, aur hamesha. Happy Birthday, meri Sweety. 🎂</p>
+  </div>
+</section>
+</main>
+<footer>Aryan ne tumhare liye banaya 💗</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
